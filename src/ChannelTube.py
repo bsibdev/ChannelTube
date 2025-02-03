@@ -235,7 +235,7 @@ class DataHandler:
                     self.general_logger.warning(f"Ignoring live video: {video_title} - {video_link}")
                     continue
 
-                if duration <= 180 and live_status is None:
+                if duration <= 0 and live_status is None:
                     self.general_logger.warning(f"Ignoring short video: {video_title} - {video_link}")
                     continue
 
